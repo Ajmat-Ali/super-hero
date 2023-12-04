@@ -1,0 +1,218 @@
+*{
+    font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid orangered; */
+    margin-bottom: 30px;
+    background-color: #B7D0E4;
+}
+#header>div{
+    width: 50%;
+    /* border: 1px solid rgb(255, 0, 200); */
+}
+#header>div>img{
+    width: 20%;
+    clip-path: circle(40%);
+}
+#header>div>p{
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    word-spacing: 5px;
+    line-height: 25px;
+}
+#main{
+    /* border: 2px solid red; */
+    width: 90%;
+    /* height: 600px; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background-color: rgba(32, 241, 220, 0.2);
+    /* color: #eee; */
+}
+/* #main>div{
+    border: 2px solid green;
+} */
+#left_child>div:last-child{
+    background-color: #1361a0;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 20px;
+}
+#left_child>div>img{
+    width: 100%;
+}
+#left_child>div>img+h1{
+    background: transparent;
+    text-align: center;
+}
+#main>div>div>video{
+    width: 100%;
+}
+#main>div>div>h3{
+    text-align: center;
+}
+#right_child>div{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 2px solid blue; */
+}
+#right_child>div>h4{
+    color: #c9005a;
+}
+#right_child>div>h4+p{
+    color: #333;
+}
+.alian_list>#Alien_character{
+    display: grid;
+    width: 100%;
+    /* border: 2px solid rgb(0, 255, 136); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.alian_list>#Alien_character>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+.alian_list>#Alien_character>div>img{
+    width: 10%;
+}
+
+
+
+@media all and (min-width:768px) and (max-width:1023px){
+    /* -----------------Medium Screen -------------- */
+    #header>div>p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #main{
+        width: 95%;
+    }
+    #left_child>div:last-child{
+        padding: 5px;
+        color: #FFF;
+        border-radius: 20px;
+    }
+    #left_child>div>img{
+        width: 100%;
+    }
+    #left_child>div>img+h1{
+        background: transparent;
+        text-align: center;
+    }
+    #main>div>div>video{
+        width: 100%;
+        border-radius: 20px;
+    }
+    #main>div>div>h3{
+        text-align: center;
+        font-size: 15px;
+    }
+    #right_child>div{
+        margin-top: 20px;
+    }
+    .alian_list>#Alien_character>div>img+h4{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:767px){
+       /* -----------------Small Screen -------------- */
+       #header{
+        width: 95%;
+        margin: auto;
+        border: 2px solid red;
+       }
+    #header>div>p{
+        font-size: 10px;
+    }
+    #main{
+        width: 95%;
+        /* margin: auto;
+        display: grid; */
+        grid-template-columns: 1fr;
+        gap: 10px;
+        background-color: rgba(32, 241, 220, 0.2);
+        /* color: #eee; */
+    }
+    /* #main>div{
+        border: 2px solid green;
+    } */
+    #main>#left_child{
+        width: 100%;
+    }
+    #main>#left_child>div{
+        width: 100%;
+    }
+    /* -----------Ben 10 Images-------- */
+    #left_child>div:first-child{   
+        width: 100%;
+    }
+    /* -----------Ben 10 Video-------- */
+    #left_child>div:last-child{
+        background-color: #1361a0;
+        text-align: center;
+        padding: 5px;
+        color: #FFF;
+        border-radius: 5px;
+    }
+    #left_child>div>img{
+        width: 100%;
+    }
+    #left_child>div>img+h1{
+        background: transparent;
+        text-align: center;
+    }
+    #main>div>div>video{
+        width: 70%;
+    }
+    #main>div>div>h3{
+        text-align: center;
+    }
+
+
+
+    #right_child>div{
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        /* border: 2px solid blue; */
+    }
+    /* #right_child>div>h4{
+        color: #c9005a;
+    } */
+    #right_child>div>h4+p{
+        color: #333;
+        width: 100%;
+    }
+    .alian_list>#Alien_character{
+        display: grid;
+        width: 100%;
+        /* border: 2px solid rgb(0, 255, 136); */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .alian_list>#Alien_character>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-align: center;
+        padding: 5px;
+        background-color: #FFF;
+        border-radius: 10px;
+    }
+    .alian_list>#Alien_character>div>img{
+        width: 10%;
+    }
+}
